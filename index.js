@@ -1,6 +1,6 @@
 var katzDeli = [];
 var number = 0
-function takeANumber (katzDeliLine, number){
+function takeANumber (katzDeliLine){
 number ++
   katzDeliLine.push(number)
 return "Welcome, You are number "+ number +"."
@@ -8,14 +8,14 @@ return "Welcome, You are number "+ number +"."
 }
 
 function nowServing (deliLine){
-var name;
+var number;
 
 if(deliLine.length === 0){
   return "There is nobody waiting to be served!"
 }
 
-name = deliLine.shift()
-return "Currently serving "+ name + "."
+number = deliLine.shift()
+return "Currently serving "+ number + "."
 }
 
 function currentLine (katzDeliLine){
