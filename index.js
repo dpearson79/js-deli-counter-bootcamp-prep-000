@@ -1,8 +1,9 @@
 var katzDeli = [];
+var number = 0
 function takeANumber (katzDeliLine, number){
-  var position = katzDeliLine.length+1
+number ++
   katzDeliLine.push(number)
-return "Welcome, You are number "+ position +" in line."
+return "Welcome, You are number "+ number +"."
 
 }
 
